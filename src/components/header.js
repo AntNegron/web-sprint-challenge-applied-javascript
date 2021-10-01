@@ -1,3 +1,5 @@
+import { createBroadcastChannel } from "msw/lib/types/utils/createBroadcastChannel";
+
 const Header = (title, date, temp) => {
   // TASK 1
   // ---------------------
@@ -11,6 +13,30 @@ const Header = (title, date, temp) => {
   //    <span class="temp">{ temp }</span>
   //  </div>
   //
+
+  // make html elements
+  const header = document.createElement('div');
+  const dateSpan = document.createElement('span');
+  const titleH1 = document.createElement('h1');
+  const tempSpan = document.createElement('span');
+
+  // assign data
+  dateSpan.textContent = date;
+  titleH1.textContent = title;
+  tempSpan.textContent = temp;
+  
+  // assign classes
+  header.classList.add('header');
+  dateSpan.classList.add('date');
+  tempSpan.classList.add('temp');
+
+  // create hierarchy
+  header.appendChild(dateSpan);
+  header.appendChild(titleH1);
+  header.appendChild(tempSpan);
+
+  console.log(header);
+  return Header;
 }
 
 const headerAppender = (selector) => {
@@ -20,6 +46,7 @@ const headerAppender = (selector) => {
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
   //
+  
 }
 
 export { Header, headerAppender }
