@@ -62,14 +62,22 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 1. What is the DOM?
 - The dom is a dynamic, language neutral API that has a tree like structure which represents our content, structure, and style
 
+
+
 2. What is an event?
 An event is a piece of code/program that waits for the user to do something and then responds to the users action.
+
+
 
 3. What is an event listener?
 - An event listener gets added to an element so that that element knows what type of event to listen for and how to respond. the event listener takes two arguments, the first being what event to listen for and the second being the callback which tells it how to respond.
 
+
+
 4. Why would we convert a NodeList into an Array?
 - We turn a nodeList in to an array so that we can use all of the array function since NodeList only allows us to use .forEach.
+
+
 
 5. What is a component?
 - A components allows you to combine and reuse HTML, CSS, and JavaScript in an application.
