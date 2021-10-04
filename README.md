@@ -72,4 +72,4 @@ An event is a piece of code/program that waits for the user to do something and 
 - We turn a nodeList in to an array so that we can use all of the array function since NodeList only allows us to use .forEach.
 
 5. What is a component?
-- a components allows you to combine and reuse HTML, CSS, and JavaScript in an application.
+- A components allows you to combine and reuse HTML, CSS, and JavaScript in an application.
